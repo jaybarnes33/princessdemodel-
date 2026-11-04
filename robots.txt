@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://princessdemodel.com/sitemap.xml
+Sitemap: https://princessdemodel.vercel.app/sitemap.xml
 
 # Block specific paths if needed (examples):
 # Disallow: /admin/
