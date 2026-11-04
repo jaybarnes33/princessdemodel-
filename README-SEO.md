@@ -56,34 +56,29 @@ This SEO optimization package includes everything needed to improve your website
 
 ## 🚀 Quick Deploy
 
-### For Apache Hosting
+### For Vercel (Current Hosting)
 ```bash
-# 1. Backup current site
-cp -r /path/to/site /path/to/backup
-
-# 2. Upload these files to root directory:
-- index.html
+# Files deployed via Git:
+- index.html (SEO optimized)
 - robots.txt
 - sitemap.xml
-- .htaccess
+- vercel.json (Vercel configuration)
 
-# 3. Set permissions
-chmod 644 index.html robots.txt sitemap.xml .htaccess
+# Note: .htaccess not used on Vercel (Apache only)
+# vercel.json handles headers, caching, and redirects
 
-# 4. Verify
-curl https://princessdemodel.com/robots.txt
-curl https://princessdemodel.com/sitemap.xml
+# Deployment:
+1. Merge PR to main branch
+2. Vercel auto-deploys
+3. Verify at: https://princessdemodel.vercel.app
 ```
 
-### For Other Hosting (Netlify, Vercel, etc.)
+### For Apache Hosting (Alternative)
 ```bash
-# Upload:
-- index.html
-- robots.txt
-- sitemap.xml
-
-# Note: .htaccess won't work (Apache only)
-# Use platform-specific redirect/header config instead
+# If migrating to Apache hosting:
+- Use .htaccess instead of vercel.json
+- Update URLs from .vercel.app to your domain
+- Upload files via FTP/SFTP
 ```
 
 ## ✅ Post-Deploy Checklist
@@ -222,7 +217,7 @@ curl https://princessdemodel.com/sitemap.xml
 curl -I http://princessdemodel.com
 
 # Test compression
-curl -H "Accept-Encoding: gzip" -I https://princessdemodel.com
+curl -H "Accept-Encoding: gzip" -I https://princessdemodel.vercel.app
 ```
 
 ## 🎉 What Makes This Special

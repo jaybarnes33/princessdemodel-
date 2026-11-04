@@ -65,15 +65,14 @@ Created XML sitemap with:
 - Priority and change frequency for each URL
 - Last modified dates
 
-### 6. .htaccess (Apache Configuration)
-Implemented performance and SEO optimizations:
-- HTTPS enforcement (301 redirect)
-- URL normalization (www/non-www)
-- Trailing slash removal
-- GZIP compression for text resources
-- Browser caching with appropriate expiry times
+### 6. vercel.json (Vercel Configuration)
+Implemented performance and SEO optimizations for Vercel:
 - Security headers (X-Frame-Options, X-XSS-Protection, etc.)
-- Directory browsing disabled
+- Browser caching with appropriate expiry times
+- HTTPS redirect configuration
+- Asset-specific cache rules
+
+**Note**: .htaccess file provided for Apache hosting but not used on Vercel. Vercel uses vercel.json instead.
 
 ## SEO Best Practices Implemented
 
