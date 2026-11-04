@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://princessdemodel.com/sitemap.xml
+
+# Block specific paths if needed (examples):
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay for well-behaved bots (optional)
+Crawl-delay: 1
